@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.orbital.hyma.foodgrab.MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/Deliver"
+        android:layout_toRightOf="@+id/Deliver"
+        android:text="Post"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="19dp"
+        android:text="Select Option"
+        android:layout_below="@+id/section_label1"
+        android:layout_toRightOf="@+id/section_label1"
+        android:layout_toEndOf="@+id/section_label1" />
+
+    <EditText
+        android:id="@+id/createPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textShortMessage"
+        android:text="Want to eat? Or deliver?"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EAT!"
+        android:layout_below="@+id/createPost"
+        android:layout_alignLeft="@+id/createPost"
+        android:layout_alignStart="@+id/createPost" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/createPost"
+        android:layout_alignRight="@+id/createPost"
+        android:layout_below="@+id/createPost"
+        android:text="DELIVER!" />
+
+</RelativeLayout>
